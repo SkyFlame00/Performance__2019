@@ -733,8 +733,6 @@ html {
     background: url(../img/cam2.jpg);
     background-position: 0px 0px; background-size: 100%; filter: brightness(100%);
     border-radius: 20px;
-    /* background-size: cover;
-    background-position: 0 0; */
     touch-action: none
 }
 

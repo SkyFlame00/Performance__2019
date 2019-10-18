@@ -24634,6 +24634,16 @@ document.addEventListener("DOMContentLoaded", function () {
     //         $(this).css({'border-radius': '23px'})
     //     }
     // });
+
+    const cards = document.querySelectorAll('.card');
+    
+    cards.forEach(card => {
+        if (card.classList.contains('card_size_s')) {
+            card.style.borderRadius = '22px';
+        } else {
+            card.style.borderRadius = '23px';
+        }
+    });
     var waterContainer = document.querySelector('.card.card_size_s:last-child');
 
     waterContainer.innerHTML = 
