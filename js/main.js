@@ -24463,19 +24463,6 @@ $('.card').each(function(e) {
     }
 });
 
-// function borderRadiusCards() {
-//     const cards = document.querySelectorAll('.card');
-
-//     cards.forEach(card => {
-//         if (card.classList.contains('card_size_s')) {
-//             card.style.borderRadius = '22px';
-//         } else {
-//             card.style.borderRadius = '54px';
-//         }
-//     });
-// }
-
-// borderRadiusCards();
 
 let curValue;
 let curRotate;
@@ -24634,16 +24621,6 @@ document.addEventListener("DOMContentLoaded", function () {
             $(this).css({'border-radius': '23px'})
         }
     });
-
-    // const cards = document.querySelectorAll('.card');
-    
-    // cards.forEach(card => {
-    //     if (card.classList.contains('card_size_s')) {
-    //         card.style.borderRadius = '22px';
-    //     } else {
-    //         card.style.borderRadius = '23px';
-    //     }
-    // });
     var waterContainer = document.querySelector('.card.card_size_s:last-child');
 
     waterContainer.innerHTML = 
@@ -24728,12 +24705,12 @@ var storage, initCriticalCam = function () {
     }), document.addEventListener("pointerup", e), g.addEventListener("onpointerup", e)
 };
 
-// $(document).ready(function(){
+$(document).ready(function(){
 
-//     var carousel = $("#carousel");
+    var carousel = $("#carousel");
 
-//     carousel.owlCarousel();
-// });
+    carousel.owlCarousel();
+});
 
 function status(e) {
     return 200 <= e.status && e.status < 300 ? Promise.resolve(e) : Promise.reject(new Error(e.statusText))
