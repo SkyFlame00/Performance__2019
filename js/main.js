@@ -24455,27 +24455,27 @@ let currentPageDevs = 1;
 
 // pagiantorDevs.classList.toggle('paginator_hide', panelCountDevs < 7);
 
-// $('.card').each(function(e) {
-//     if ($(this).hasClass('card_size_s')) {
-//         $(this).css({'border-radius': '22px'})
-//     } else {
-//         $(this).css({'border-radius': '54px'})
-//     }
-// });
+$('.card').each(function(e) {
+    if ($(this).hasClass('card_size_s')) {
+        $(this).css({'border-radius': '22px'})
+    } else {
+        $(this).css({'border-radius': '54px'})
+    }
+});
 
-function borderRadiusCards() {
-    const cards = document.querySelectorAll('.card');
+// function borderRadiusCards() {
+//     const cards = document.querySelectorAll('.card');
 
-    cards.forEach(card => {
-        if (card.classList.contains('card_size_s')) {
-            card.style.borderRadius = '22px';
-        } else {
-            card.style.borderRadius = '54px';
-        }
-    });
-}
+//     cards.forEach(card => {
+//         if (card.classList.contains('card_size_s')) {
+//             card.style.borderRadius = '22px';
+//         } else {
+//             card.style.borderRadius = '54px';
+//         }
+//     });
+// }
 
-borderRadiusCards();
+// borderRadiusCards();
 
 let curValue;
 let curRotate;
@@ -24627,23 +24627,23 @@ document.querySelectorAll('.panel_floor').forEach(p => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    // $('.card').each(function(e) {
-    //     if ($(this).hasClass('card_size_s')) {
-    //         $(this).css({'border-radius': '22px'})
-    //     } else {
-    //         $(this).css({'border-radius': '23px'})
-    //     }
-    // });
-
-    const cards = document.querySelectorAll('.card');
-    
-    cards.forEach(card => {
-        if (card.classList.contains('card_size_s')) {
-            card.style.borderRadius = '22px';
+    $('.card').each(function(e) {
+        if ($(this).hasClass('card_size_s')) {
+            $(this).css({'border-radius': '22px'})
         } else {
-            card.style.borderRadius = '23px';
+            $(this).css({'border-radius': '23px'})
         }
     });
+
+    // const cards = document.querySelectorAll('.card');
+    
+    // cards.forEach(card => {
+    //     if (card.classList.contains('card_size_s')) {
+    //         card.style.borderRadius = '22px';
+    //     } else {
+    //         card.style.borderRadius = '23px';
+    //     }
+    // });
     var waterContainer = document.querySelector('.card.card_size_s:last-child');
 
     waterContainer.innerHTML = 
