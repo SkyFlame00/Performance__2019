@@ -1,5 +1,8 @@
 "use strict";
 
+
+
+
 const output = document.querySelector('.modal__value');
 const rangeSLider = document.querySelector('.adjust-bar.adjust-bar_theme_temp');
 
